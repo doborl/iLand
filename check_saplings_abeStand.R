@@ -1,5 +1,5 @@
 
-
+# I am marco
 
 rm(list=ls())
 library(RSQLite)
@@ -203,7 +203,7 @@ abestand.detail1$species <- factor(abestand.detail1$species, levels=new_order_gg
 g1<-ggplot(abestand.detail1, aes(x=year, y=basalarea, fill=species)) +
   geom_area(show.legend=F) +
   scale_fill_manual(values=cols, guide=guide_legend(reverse=TRUE))+
-  labs(y="basal area [m²/ha]") +
+  labs(y="basal area [mÂ²/ha]") +
   ggtitle(paste0("Basal area at stand=", mystand))+
   theme_bw() +
   theme(panel.grid.major = element_blank(),
@@ -223,7 +223,7 @@ abestand.detail1.smalls<-data.frame(abestand.detail1 %>% filter(relBasalarea<0.2
 g2<-ggplot(abestand.detail1.smalls, aes(x=year, y=basalarea, fill=species)) +
   geom_area(show.legend=F) +
   scale_fill_manual(values=cols, guide=guide_legend(reverse=TRUE))+
-  labs(y="basal area [m²/ha]") +
+  labs(y="basal area [mÂ²/ha]") +
   ggtitle(paste0("Basal area of species less than 20% at stand=", mystand))+
   theme_bw() +
   theme(panel.grid.major = element_blank(),
