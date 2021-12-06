@@ -299,12 +299,12 @@ _____________________________________________________ SECOND PART OF THE SCRIPT 
     </path>
     <database>
        <in>species_param_europe_allometry_20190521_SK.sqlite</in>
-      <out>subregion_medium_lukas.sqlite</out>
+      <out>subregion_medium_lukas_b.sqlite</out>
       <climate>MTCLIM_corrected_vpd_1961-2016.sqlite</climate>
     </database>
     <logging>
       <logTarget>file</logTarget>
-      <logFile>log/test.txt</logFile>
+      <logFile>log/test_b.txt</logFile>
       <flush>false</flush>
     </logging>
     <settings>
@@ -521,7 +521,7 @@ _____________________________________________________ SECOND PART OF THE SCRIPT 
       <file></file>
       <abeEnabled>true</abeEnabled>
       <abe>
-       <file>abe_2/tatra_lukas.js</file>
+       <file>abe_2/tatra_lukas_b.js</file>
         <agentDataFile>abe_2/BAU_2021.csv</agentDataFile>
       </abe>
     </management>
