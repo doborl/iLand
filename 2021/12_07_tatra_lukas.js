@@ -47,14 +47,14 @@ var a_planting_3 = {
 // For thinnings there are build in method in the Bilek L., excel file, and we use it. Stand top height and dbh variable CHANGE DURING THE ACTIVITY/AGE
 // WE ARE USING THE METHOD_3_STP -> 3 IS THE KIND OF SOIL (ACIDIC SITE). 
 // WE ARE USING SHELTERWOOD MANAGEMENT FOR FINELCUT.
-
+// VARIANT FOR NUMBER OF STEMS REMAINING
 
 var a_thinning31 = { type: "thinning", 
 				   schedule: { minRel: 0.09, optRel: 0.10, maxRel: 0.11 , force=true},
 				   constraint: ["stand.topHeight>0"],
                                    thinning: "custom",
 				   onEvaluate: function() { console.log("1st THINNING ");return true;},
-				   targetValue: 40,  targetVariable: "volume", targetRelative: true,  minDbh: 5,
+				    remainingStems: 300, targetValue: 200,  minDbh: 5,
 				   classes: [30, 30, 20, 10, 10]
 }
 
@@ -65,7 +65,7 @@ var a_thinning32 = { type: "thinning",
 				   constraint: ["stand.topHeight>8"],
                                    thinning: "custom",
 				   onEvaluate: function() { console.log("2nd THINNING ");return true;},
-				   targetValue: 30,  targetVariable: "volume", targetRelative: true,  minDbh: 5,
+				    remainingStems: 350, targetValue: 150,  minDbh: 5,
 				   classes: [30, 30, 20, 10, 10]
 }
 
@@ -76,7 +76,7 @@ var a_thinning33 = { type: "thinning",
 				   constraint: ["stand.topHeight>11"],
                                    thinning: "custom",
 				   onEvaluate: function() { console.log("3rd THINNING ");return true;},
-				   targetValue: 25,  targetVariable: "volume", targetRelative: true,  minDbh: 5,
+				   remainingStems: 375, targetValue: 125,  minDbh: 5,
 				   classes: [30, 30, 30, 10, 0]
 }
 
@@ -86,7 +86,7 @@ var a_thinning34 = { type: "thinning",
 				   constraint: ["stand.topHeight>14"],
                                    thinning: "custom",
 				   onEvaluate: function() { console.log("4th THINNING ");return true;},
-				   targetValue: 25,  targetVariable: "volume", targetRelative: true,  minDbh: 5,
+				   remainingStems: 375, targetValue: 125,  minDbh: 5,
 				   classes: [30, 30, 30, 10, 0]
 }
 
@@ -96,7 +96,7 @@ var a_thinning35 = { type: "thinning",
 				   constraint: ["stand.topHeight>16"],
                                    thinning: "custom",
 				   onEvaluate: function() { console.log("5th THINNING ");return true;},
-				   targetValue: 20,  targetVariable: "volume", targetRelative: true,  minDbh: 5,
+				   targetValue: 20,  targetVariable: "volume",  minDbh: 5,
 				   classes: [30, 30, 30, 10, 0]
 }
 
@@ -107,7 +107,7 @@ var a_thinning36 = { type: "thinning",
 				   constraint: ["stand.topHeight>18"],
                                    thinning: "custom",
 				   onEvaluate: function() { console.log("6th THINNING ");return true;},
-				   targetValue: 20,  targetVariable: "volume", targetRelative: true,  minDbh: 5,
+				   remainingStems: 400, targetValue: 100, targetRelative: true,  minDbh: 5,
 				   classes: [30, 30, 30, 10, 0]
 }
 
@@ -117,7 +117,7 @@ var a_thinning37 = { type: "thinning",
 				   constraint: ["stand.topHeight>20"],
                                    thinning: "custom",
 				   onEvaluate: function() { console.log("7th THINNING ");return true;},
-				   targetValue: 15,  targetVariable: "volume", targetRelative: true,  minDbh: 5,
+				   remainingStems: 425, targetValue: 75,  minDbh: 5,
 				   classes: [30, 30, 30, 10, 0]
 }
 
@@ -127,7 +127,7 @@ var a_thinning38 = { type: "thinning",
 				   constraint: ["stand.topHeight>21"],
                                    thinning: "custom",
 				   onEvaluate: function() { console.log("8th THINNING ");return true;},
-				   targetValue: 15,  targetVariable: "volume", targetRelative: true,  minDbh: 5,
+				   remainingStems: 425, targetValue: 75,  minDbh: 5,
 				   classes: [30, 30, 30, 10, 0]
 }
 
@@ -148,7 +148,7 @@ var a_thinning3_sw1 = { type: "thinning",
 				   constraint: ["stand.topHeight>0"],
                                    thinning: "custom",
 				   onEvaluate: function() { console.log("1st THINNING ");return true;},
-				   targetValue: 50,  targetVariable: "volume", targetRelative: true,  minDbh: 5,
+				   remainingStems: 250, targetValue: 250,  minDbh: 5,
 				   classes: [40, 30, 20, 5, 5]
 }
 
